@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Photo Feed Bootstrap</title>
+
+    <script src="https://kit.fontawesome.com/58626b2415.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="https://www.instagram.com">
+                    <i class="fab fa-instagram" style="font-size: 30px;"></i>
+                    <img src="https://www.instagram.com/static/images/web/logged_out_wordmark.png/7a252de00b20.png" width="110" height="50" alt="instagram caption" class="img-fluid d-inline-block aling-top">
+                </a>
+                <div class="navbar-nav">
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#postmodal">Create a new post</button>
+                    <div class="modal fade" id="postmodal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="postModal" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <h5 class="modal-title">Create a new post</h5>
+                                            <div class="dropdown-divider"></div>
+                                            <label for="FormControlTextarea1"><strong>Caption:</strong></label>
+                                            <textarea class="form-control border-dark" id="FormControlTextarea1" rows="2">Add the caption of your post here</textarea>
+                                        </div>
+                                    </form>
+                                    <i class="fas fa-camera" style="font-size: 20px; margin-right: 2px; border: 1.5px solid lightgray; padding: 6px; border-radius: 4px;"></i>
+                                    <i class="fas fa-map-marker-alt" style="font-size: 20px; border: 1.5px solid lightgray; padding: 6px;border-radius: 4px;"></i>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-outline-dark" data-dismiss="modal" style="background-color: gray;">close</button>
+                                    <button type="button" class="btn btn-success">Publish</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdonw" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-cog"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-meno-right" aria-labelledby="navbarDropdonw">
+                            <a class="dropdown-item" href="#">Profile</a>
+                            <a class="dropdown-item" href="#">Accesibility</a>
+                            <a class="dropdown-item" href="#">Privacy and data</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#" style="color: red;">Log out</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav>
+            <div class="nav nav-pills my-4 justify-content-center" id="pills-tab" role="tablist">
+                <a class="nav-item nav-link active bg-light text-dark mr-1" id="pills-stacked-tab" data-toggle="pill" href="#pills-stacked" role="presentation" aria-controls="pills-stacked" aria-selected="true">
+                    <i class="fas fa-th"></i>
+                </a>
+                <a class="nav-item nav-link bg-light text-dark" id="pills-displayed-tab" data-toggle="pill" href="#pills-displayed" role="presentation" aria-controls="pills-displayed" aria-selected="flase">
+                    <i class="fas fa-square"></i>
+                </a>
+            </div>
+        </nav>
+        <div class="tab-content" id="pills-tabContent">
+           <div class="tab-pane fade show active" id="pills-stacked" role="tabpanel" aria-labelledby="pills-stacked-tab">
+            <div class="card-group">
+                <div class="card card m-2 border-0">
+                    <img src="https://comparemyjet.com/wp-content/uploads/2021/08/How-Much-Does-a-Private-Jet-Cost-to-Hire-1-800x600.jpg" class="card-img" alt="...">
+                </div>
+                <div class="card card m-2 border-0">
+                    <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" class="card-img" alt="...">
+                </div>
+                <div class="card card m-2 border-0">
+                    <img src="https://cdn.businessinsider.es/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2019/09/third-place-wildilfe-grevys-illusion-yaron-schmid.jpg?itok=luWTKSlE" class="card-img" alt="...">
+                </div>
+            </div>
+            <div class="card-group">
+                <div class="card card m-2 border-0">
+                    <img src="https://definicion.de/wp-content/uploads/2010/01/ciudad-1.jpg" class="card-img" alt="...">
+                </div>
+                <div class="card card m-2 border-0">
+                    <img src="https://www.fundacionaquae.org/wp-content/uploads/2020/10/bosques.jpg" class="card-img" alt="...">
+                </div>
+                <div class="card card m-2 border-0">
+                    <img src="https://elpilon.com.co/wp-content/uploads/2018/04/party-wallpape.jpg" class="card-img" alt="...">
+                </div>
+            </div>
+        </div> 
+        <div class="tab-pane fade" id="pills-displayed" role="tabpanel" aria-labelledby="pills-displayed-tab">
+            <div class="container-fluid bg-light">
+                <div class="row">
+                    <div class="card my-4 mx-auto" style="width: 600px;">
+                    <div class="row justify-content-between aling-items-center p-3">
+                        <h5 class="col-10 card-title mb-0">En el jet</h5>
+                        <h5 class="col-2 card-text">08/26</h5>
+                    </div>
+                    <img src="https://comparemyjet.com/wp-content/uploads/2021/08/How-Much-Does-a-Private-Jet-Cost-to-Hire-1-800x600.jpg" alt="">
+                    <p class="px-3 my-2"><strong>204 likes</strong></p>
+                    <p class="px-3">Desde aqui arriba todo se ve pequeno</p>
+                 </div>
+                 <div class="row">
+                    <div class="card my-4 mx-auto" style="width: 600px;">
+                    <div class="row justify-content-between aling-items-center p-3">
+                        <h5 class="col-10 card-title mb-0">Ilimunacion</h5>
+                        <h5 class="col-2 card-text">09/10</h5>
+                    </div>
+                    <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="">
+                    <p class="px-3 my-2"><strong>170 likes</strong></p>
+                    <p class="px-3">La naturaleza en todo su explendor</p>
+                 </div>
+                 <div class="row">
+                    <div class="card my-4 mx-auto" style="width: 600px;">
+                    <div class="row justify-content-between aling-items-center p-3">
+                        <h5 class="col-10 card-title mb-0">De que color soy</h5>
+                        <h5 class="col-2 card-text">09/18</h5>
+                    </div>
+                    <img src="https://cdn.businessinsider.es/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2019/09/third-place-wildilfe-grevys-illusion-yaron-schmid.jpg?itok=luWTKSlE" alt="">
+                    <p class="px-3 my-2"><strong>144 likes</strong></p>
+                    <p class="px-3">Soy de color blanco o negro?</p>
+                 </div>
+                 <div class="row">
+                    <div class="card my-4 mx-auto" style="width: 600px;">
+                    <div class="row justify-content-between aling-items-center p-3">
+                        <h5 class="col-10 card-title mb-0">Me gusta como se ve de noche</h5>
+                        <h5 class="col-2 card-text">09/18</h5>
+                    </div>
+                    <img src="https://definicion.de/wp-content/uploads/2010/01/ciudad-1.jpg" alt="">
+                    <p class="px-3 my-2"><strong>250 likes</strong></p>
+                    <p class="px-3">veo veo que es lo que veo</p>
+                 </div>
+                 <div class="row">
+                    <div class="card my-4 mx-auto" style="width: 600px;">
+                    <div class="row justify-content-between aling-items-center p-3">
+                        <h5 class="col-10 card-title mb-0">Priv Location</h5>
+                        <h5 class="col-2 card-text">10/15</h5>
+                    </div>
+                    <img src="https://www.fundacionaquae.org/wp-content/uploads/2020/10/bosques.jpg" alt="">
+                    <p class="px-3 my-2"><strong>138 likes</strong></p>
+                    <p class="px-3">Ni yo se donde estoy</p>
+                 </div>
+                </br>
+                 <div class="row">
+                    <div class="card my-4 mx-auto" style="width: 600px;">
+                    <div class="row justify-content-between aling-items-center p-3">
+                        <h5 class="col-10 card-title mb-0">No rafa no party</h5>
+                        <h5 class="col-2 card-text">11/08</h5>
+                    </div>
+                    <img src="https://elpilon.com.co/wp-content/uploads/2018/04/party-wallpape.jpg" alt="">
+                    <p class="px-3 my-2"><strong>235likes</strong></p>
+                    <p class="px-3">Si me viste no me acuerdo</p>
+                 </div>
+            </div>
+        </div>
+        
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
